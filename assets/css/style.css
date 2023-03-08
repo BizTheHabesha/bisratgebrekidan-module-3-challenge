@@ -54,6 +54,20 @@ header {
   min-height: 100px;
 }
 
+.input-container{
+  display: flex;
+  flex: 1 0 200;
+  justify-content: space-evenly;
+  flex-wrap:nowrap;
+}
+
+label{
+  border: 2px #c0c7cf dashed;
+  margin: 2px;
+  padding: 2px;
+  font-size: 80%;
+}
+
 .card-footer {
   text-align: center;
 }
@@ -118,11 +132,21 @@ button[disabled] {
   overflow: hidden;
 }
 
+#len-output{
+  display:inline;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+  }
+  label{
+    font-size: 0.9rem;
+  }
+  #length{
+    width: 3rem;
   }
 
   #password {
