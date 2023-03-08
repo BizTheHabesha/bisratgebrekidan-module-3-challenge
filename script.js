@@ -22,3 +22,6 @@ function generatePassword(){
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+document.getElementById("length").oninput = function(){
+  document.getElementById("len-output").innerHTML = this.value;
+}
