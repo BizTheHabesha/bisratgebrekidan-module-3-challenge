@@ -51,24 +51,24 @@ function generatePassword(){
       // there are 10 numbers and numbers begin at ascii dec 48
       password = password + String.fromCharCode((Math.floor(ascii*10))+48);
     }else if(charTypeLookup[lookup] == 'spec'){
-      // there are 25 special characters included, seperated into 4 sets, shown below
-      // 35-47 : 12 & 58-64 : 6 & 91-95 : 4 & 123-126 : 3
+      // there are 27 special characters included, seperated into 4 sets, shown below
+      // 32-47 : 15 & 58-64 : 6 & 91-95 : 4 & 123-126 : 3
       // we only need to generate the number once for these
-      specLookup = Math.floor(Math.random() *24);
+      specLookup = Math.floor(Math.random() *27);
       // because each is biased by the range from above, the addition is offset slightly
-      // next to each section is the ascii dec which is actually starts at
-      if(specLookup <= 12){
-        // starts at ascii dec 35
-        password = password + String.fromCharCode(specLookup + 35);
-      }else if(specLookup <= 18){
+      // next to each section is the ascii dec which it actually starts at
+      if(specLookup <= 15){
+        // starts at ascii dec 32
+        password = password + String.fromCharCode(specLookup + 32);
+      }else if(specLookup <= 21){
         // starts at ascii dec 58
-        password = password + String.fromCharCode(specLookup + 46);
-      }else if(specLookup <= 22){
+        password = password + String.fromCharCode(specLookup + 43);
+      }else if(specLookup <= 25){
         // starts at ascii dec 91
-        password = password + String.fromCharCode(specLookup + 73);
+        password = password + String.fromCharCode(specLookup + 70);
       }else{
         // starts at ascii dec 123
-        password = password + String.fromCharCode(specLookup + 101);
+        password = password + String.fromCharCode(specLookup + 98);
       }
     }else{
       // if the lookup arr contains an invalid lookup value, we skip the letter all together
