@@ -10,7 +10,7 @@ A password generator that psuedo-randomly generates passwords based on user crit
 N/A
 
 ## Usage
-The password generator is deployed [here](#).
+The password generator is deployed [here](https://bizthehabesha.github.io/bisratgebrekidan-module-3-challenge/).
 
 ## Credits
 N/A
