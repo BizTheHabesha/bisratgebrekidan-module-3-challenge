@@ -23,21 +23,25 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-          <label for="lowercaseL">
-            <input type="checkbox" id="lowercase">
+          <label for="lowercase">
+            <input type="checkbox" id="lowercase" name="lowercase">
             Lowercase letters
           </label>
-          <label for="uppercaseL">
-            <input type="checkbox" id="uppercase">
+          <label for="uppercase">
+            <input type="checkbox" id="uppercase" name="uppercase">
             Uppercase
           </label>
-          <label for="numbersL">
-            <input type="checkbox" id="numbers">
+          <label for="numbers">
+            <input type="checkbox" id="numbers" name="numbers">
             Numbers
           </label>
-          <label for="specialcharsL">
-            <input type="checkbox" id="specialchars">
+          <label for="specialchars">
+            <input type="checkbox" id="specialchars" name="specialchars">
             Special Characters
+          </label>
+          <label for="length" id="length-laber">
+            <input type="range" min="8" max="128" value="16" id="length">
+            Length
           </label>
         </div>
         <div class="card-footer">
